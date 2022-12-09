@@ -45,7 +45,7 @@ public class PracticeFormTests extends TestBase {
             $(".react-datepicker__day--031:not(.react-datepicker__day--outside-month)").click();
             $("#subjectsInput").setValue("Chemistry").pressEnter();
             $("#hobbiesWrapper").$(byText("Reading")).click();
-            $("#uploadPicture").uploadFromClasspath("kot.jpg");
+            $("#uploadPicture").uploadFromClasspath("esponja.png");
             $("#currentAddress").setValue("Neva 40");
             $("#state").click();
             $("#stateCity-wrapper").$(byText("Haryana")).click();
@@ -61,7 +61,7 @@ public class PracticeFormTests extends TestBase {
             $(".table-responsive").shouldHave(text("31 July,1992"));
             $(".table-responsive").shouldHave(text("Chemistry"));
             $(".table-responsive").shouldHave(text("Reading"));
-            $(".table-responsive").shouldHave(text("kot.jpg"));
+            $(".table-responsive").shouldHave(text("esponja.png"));
             $(".table-responsive").shouldHave(text("Neva 40"));
             $(".table-responsive").shouldHave(text("Haryana Karnal"));
         });
